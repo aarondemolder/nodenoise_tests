@@ -16,3 +16,5 @@ The tests reflect both these points, with tests that verify a specific 'new' fea
 Generally the tests are default constructors, getters, setters, checking node IDs and copy constructors.
 
 I also wanted to add tests for the node registry, creation & connections but this didn't work out.
+
+It would have been good to use gmock to mimic node useage too.
