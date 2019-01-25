@@ -1,6 +1,8 @@
 #include <iostream>
 #include <gtest/gtest.h>
 
+//#include "StubNodeDataModel.hpp"
+
 //#include <nodes/DataModelRegistry>
 
 //tested in this order
@@ -21,6 +23,18 @@
 //using QtNodes::PortIndex;
 //using QtNodes::PortType;
 
+//namespace
+//{
+//class StubModelStaticName : public StubNodeDataModel
+//{
+//public:
+//  static QString
+//  Name()
+//  {
+//    return "Name";
+//  }
+//};
+//}
 
 //Ideally this would use gmock to mimic node use
 //https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md (I'm the dummy)
@@ -227,11 +241,14 @@ TEST(NodeCreation, registry)
   //ideally we'd register a data model, create a model, and try to get the name
   //but regrettably this code throws some errors I haven't been able to solve
   //example is here - https://github.com/paceholder/nodeeditor/blob/master/test/src/TestDataModelRegistry.cpp
+  //of course this actually does work in practice, but not here
 
-//DataModelRegistry registry;
-//registry.registerModel<FreqSourceDataModel>();
-//auto ret = registry.create("freq"); //errors here
-//ASSERT_EQ(ret->name(),"Frequency Source");
+//  DataModelRegistry registry;
+//  registry.registerModel<FreqSourceDataModel>();
+  //auto ret = registry.create("freq"); //errors here
+  //ASSERT_EQ(ret->name(),"Frequency Source");
+
+
 
 }
 
