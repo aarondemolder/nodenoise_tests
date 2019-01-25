@@ -22,6 +22,9 @@
 //using QtNodes::PortType;
 
 
+//Ideally this would use gmock to mimic node use
+//https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md (I'm the dummy)
+
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc,argv);
